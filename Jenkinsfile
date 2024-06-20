@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+       terraform 'terraform'
+    }
     environment {
         AWS_DEFAULT_REGION = 'eu-west-1'
     }
